@@ -1,6 +1,6 @@
 window.onload = function() {
     'use strict';
-    var slides = document.getElementsByTagName('div'),
+    var slides = Array.prototype.slice.call(document.getElementsByTagName('div'), 0),
         timerInterval,
         keyCodes = {
             PAGEUP: 33,

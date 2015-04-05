@@ -6,6 +6,8 @@ body {
   margin:0;
   padding:0;
   font-weight:bold;
+  cursor:pointer;
+  cursor:hand;
 }
 
 h1, h2, h3, p {
@@ -28,8 +30,6 @@ img {
 }
 
 div {
-  cursor:pointer;
-  cursor:hand;
   position:absolute;
   top:0px;
   left:0px;

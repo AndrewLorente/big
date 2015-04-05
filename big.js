@@ -104,7 +104,8 @@ window.onload = function() {
                 slides.length - 1,
                 parseInt(window.location.hash.substring(1), 10)
             ),
-        0);
+            0
+        );
     }
 
     if (window.location.hash) {

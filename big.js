@@ -1,7 +1,15 @@
 window.onload = function() {
     'use strict';
     var slides = document.getElementsByTagName('div'),
-        timerInterval;
+        timerInterval,
+        keyCodes = {
+            PAGEUP: 33,
+            PAGEDOWN: 34,
+            LEFT: 37,
+            UP: 38,
+            RIGHT: 39,
+            DOWN: 40
+        };
     if (!slides) {
         return;
     }
@@ -73,10 +81,10 @@ window.onload = function() {
     }
 
     document.onkeydown = function(event) {
-        if (~ [39, 34, 40].indexOf(event.which)) {
+        if (~ [keyCodes.RIGHT, keyCodes.DOWN, keyCodes.PAGEDOWN].indexOf(event.which)) {
             fwd();
         }
-        if (~ [37, 33, 38].indexOf(event.which)) {
+        if (~ [keyCodes.LEFT, keyCodes.UP, keyCodes.PAGEUP].indexOf(event.which)) {
             rev();
         }
     };
